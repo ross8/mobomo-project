@@ -6,19 +6,37 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Exo 2", sans-serif;
 }
 
-h2{font-size: 20px;}
-h3{font-size: 14px;}
-h4{font-size: 12px;}
+h2{font-size: 22px;}
+
+h3{
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+h4{font-size: 14px;}
+
+.media img{
+    width: 90px;
+    height: auto;
+}
 
 @media (min-width: 768px){
-    h2{font-size: 24px;}
-    h3{font-size: 18px;}
+    h2{font-size: 26px;}
+    h3{font-size: 20px;}
     h4{font-size: 16px;}
+    
+    .media img{
+        width: 120px;
+    }
 }
 @media (min-width: 992px){
     h2{font-size: 30px;}
     h3{font-size: 24px;}
     h4{font-size: 18px;}
+    
+    .media img{
+        width: 160px;
+    }
 }
   
 /* ----------- 
@@ -35,8 +53,9 @@ h4{font-size: 12px;}
     padding-top: 0;
 }
 
-.navbar-header{
-    background-color: #fff;   
+.navbar{
+    background-color: #fff;
+    max-height: 50px;
 }
 
 .navbar-collapse{
@@ -91,6 +110,10 @@ h4{font-size: 12px;}
         padding-top: 0;
     }
     
+    .navbar{
+        background-color: #fff;
+        max-height: 75px;
+    }
     .navbar-nav{
         margin-top: 10px;
         margin-left: auto;
@@ -124,12 +147,12 @@ h4{font-size: 12px;}
     background-color: #8eb4e3;
     text-align: center;
     color: #fff;
-    padding-bottom: 40px;
+    padding: 50px 0px;
     margin-top: 50px;
 }
 
 .header h4{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 /* Media queries for screens larger than 992px: */
 
@@ -148,11 +171,21 @@ h4{font-size: 12px;}
 
 .content h3{
     color: #8eb4e3;
+    margin-bottom: 25px;
 }
 
-.content img{
-    margin: 25px 0px;
+.content a{
+    color: #2aae56;
+    text-decoration: underline;
 }
+.content .media{
+    margin-bottom: 20px;
+}
+
+.content-section{
+    margin-bottom: 60px;
+}
+
 
 /* Media queries for screens larger than 768px: */
 
@@ -167,8 +200,34 @@ h4{font-size: 12px;}
 /* For screens less than 992px: */
 
 .marketing img{
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.marketing .btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Media queries for screens larger than 768px: */
+
+@media (min-width: 992px){
+    .marketing .btn{
+        float: right;
+    }
+}
+
+/* ------------
+    ACME Team
+------------ */
+
+/* For screens less than 992px: */
+
+.acme-team h3{
+    color: #373737;
+    margin-bottom: 10px;
 }
 
 /* Media queries for screens larger than 768px: */
