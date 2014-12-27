@@ -1,0 +1,37 @@
+    <nav class="navbar navbar-fixed-top">
+            <!-- Fixed width container for navbar content -->
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Collapsed nav menu toggle button -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> <!-- End toggle button -->
+                    
+                    <!-- Navbar Logo image -->
+                    <a class="navbar-brand" href="./index.php">
+                        <img alt="ACME Logo" class="logo img-responsive" src="./img/logo.png"> <!-- Image responsive class used to facilitate proportional resizing using media queries with .navbar-brand img -->
+                    </a>
+                </div><!-- End navbar header -->
+                
+                <!-- Right aligned collapsable nav menu -->
+                
+                <div class="collapse navbar-collapse" id="nav-links">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li class="vertical-bar hidden-xs hidden-sm">|</li><!-- Vertical bar hidden on small screens -->
+                        <li><a href="#">Products</a></li>
+                        <li class="vertical-bar hidden-xs hidden-sm">|</li><!-- Vertical bar hidden on small screens -->
+                        <li><a href="#">Services</a></li>
+                        <li>
+                            <!-- A "contact us" *button* is shown for larger screens -->
+                            <a class = "hidden-xs hidden-sm" href="#"><button type="button" class="btn btn-success">Contact Us</button></a>
+                            <!-- A "contact us" *link* is shown in the collapsed menu on smaller screens -->
+                            <a class="hidden-md hidden-lg" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div><!-- End collapsable nav menu -->
+            </div><!-- End fixed width container for navbar content -->
+        </nav><!-- End navbar -->

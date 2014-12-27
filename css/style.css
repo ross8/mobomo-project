@@ -1,237 +1,231 @@
-/* -------------------- 
-    GLOBAL STYLES 
--------------------- */
+/* ******** DEFAULT STYLES (SMALLER SCREENS), DIVIDED BY PAGE SECTION (scroll down for larger screens) ******** */
 
-h1,h2,h3,h4,h5,h6{
-    font-family: "Exo 2", sans-serif;
-}
+    /* -------- GLOBAL STLES -------- */
 
-h2{font-size: 22px;}
 
-h3{
-    font-size: 16px;
-    letter-spacing: -1px;
-}
-
-h4{font-size: 14px;}
-
-.media img{
-    width: 90px;
-    height: auto;
-}
-
-@media (min-width: 768px){
-    h2{font-size: 26px;}
-    h3{font-size: 20px;}
-    h4{font-size: 16px;}
+    h1,h2,h3,h4,h5,h6{font-family: "Exo 2","arial black", sans-serif;}
     
-    .media img{
-        width: 120px;
+    h1{font-size: 28px;}
+    h2{font-size: 22px;}
+    h3{
+        font-size: 16px;
+        letter-spacing: -1px;
     }
-}
-@media (min-width: 992px){
-    h2{font-size: 30px;}
-    h3{font-size: 24px;}
-    h4{font-size: 18px;}
-    
-    .media img{
-        width: 160px;
+    h4{font-size: 14px;}
+    h5{font-size: 11px;}
+    64{font-size: 10px;}
+
+
+    .btn{
+        background: rgb(54,217,108); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(54,217,108,1) 0%, rgba(42,174,86,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(54,217,108,1)), color-                               stop(100%,rgba(42,174,86,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36d96c', endColorstr='#2aae56',GradientType=0 ); /* IE6-9 */
+        border: none;
+        border-radius: 8px;
     }
-}
-  
-/* ----------- 
-    NAVBAR 
------------- */
 
-/* For screens less than 992px: */
+    .media img{
+        width: 90px;
+        height: auto;
+    }
 
-.navbar-brand,
-.navbar-nav li,
-.navbar-nav li a{
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
 
-.navbar{
-    background-color: #fff;
-    max-height: 50px;
-}
+    /* -------- NAVBAR -------- */
 
-.navbar-collapse{
-    border-top: none;
-}
 
-.container>.navbar-collapse{
-    background-color: transparent;
-}
-
-.navbar-brand img{
-    height: 25px;
-    margin-top: 12.5px;
-}
-
-.navbar-nav{
-    margin-top: -7.5px;
-}
-
-.navbar a{
-    color: #fff;
-}
-
-.navbar-toggle{
-    background-color: #3e3e3e;
-    border-radius: 0px;
-}
-
-.icon-bar{
-    background-color: #fff;   
-}
-
-.navbar-nav li a:hover,
-.navbar-nav li a:focus{
-    background-color: transparent;
-}
-
-.navbar-nav{
-    text-align: right;
-    background-color: #3e3e3e;
-    margin-left: 50%;
-}
-
-/* Media queries for screens larger than 992px: */
-
-@media (min-width: 992px){   
     .navbar-brand,
     .navbar-nav li,
-    .navbar-nav li a{
-        line-height: 65px;
-        height: 65px;
+    .navbar-nav li a{ /* setting height of navbar to match photoshop layout */
+        line-height: 50px;
+        height: 50px;
         padding-top: 0;
     }
-    
+
     .navbar{
         background-color: #fff;
-        max-height: 75px;
+        max-height: 50px; /* max height must be set to allow half-screen dropdown nav menu. Otherwise .navbar would expand with .navbar-collapse. */
     }
-    .navbar-nav{
-        margin-top: 10px;
+
+    .navbar-brand img{
+        height: 25px;
+        margin-top: 12.5px; /* Centering logo on navbar */
+    }
+
+    .navbar-collapse{
+        background-color: transparent;/* Allows for half-screen dropdown menu */
+        border-top: none;
+    }
+
+    .navbar a{color: #fff;}
+
+    .navbar-toggle{
+        background-color: #3e3e3e; 
+        border-radius: 0px;
+    }
+
+    .icon-bar{background-color: #fff;}
+
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus{
+        background-color: transparent;
+    }
+
+    .navbar-nav{ /* Creates half-screen dropgown menu */
+        text-align: right;
+        background-color: #3e3e3e;
+        margin-left: 50%;
+        margin-top: -7.5px;
+    }
+
+
+    /* -------- HEADER -------- */
+
+
+    .header{
+        background-color: #8eb4e3;
+        text-align: center;
+        color: #fff;
+        padding: 50px 0px;
+        margin-top: 50px;
+    }
+
+    .header-gradient{/* This gradient emulates blending method used in photoshop file. */
+        margin-top: -50px;
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#00000000',GradientType=0 ); /*IE6-9 */
+    }
+
+    .header h4{margin-top: 25px;}/* Matching photoshop file spacing */
+
+
+    /* -------- CONTENT -------- */
+
+
+    .content h3{/* section headers */
+        color: #8eb4e3;
+        margin-bottom: 25px;
+    }
+
+    .content a{/* setting link style for all links in main content of page */
+        color: #2aae56;
+        text-decoration: underline;
+    }
+
+    .content .media{margin-bottom: 20px;} /* matching spacing from photoshop file */
+
+    .content>.container>div{margin-bottom: 60px;} /* Provides proper spacing for any sections within the .content div */
+
+
+    /* -------- MARKETING -------- */
+
+
+    .marketing img{/* center images on small screens */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    .marketing .btn{/* center "know more" button on small screens */
+        display: block;
+        margin-right: auto;
         margin-left: auto;
     }
-    
-    .navbar-brand img{
-        margin-top: 15px;
-        height: 45px;
+
+
+    /* -------- MEET THE TEAM ------- */
+
+
+    .media-body>h3{ /* heading styling specific to team members */
+        color: #373737;
+        margin-bottom: 10px;
     }
-     
-    .navbar a{
-        color: #454545;
+
+
+/* ******** MEDIA QUERIES FOR LARGER SCREENS DIVIDED BY PAGE SECTION ******** */
+
+
+    @media (min-width: 768px){
+        
+        /* -------- GLOBAL STYLES -------- */
+        
+        h1{font-size: 32px;}
+        h2{font-size: 26px;}
+        h3{
+            font-size: 20px;
+            letter-spacing: normal;
+        }
+        h4{font-size: 16px;}
+        h5{font-size: 12px;}
+        h6{font-size: 11px;}
+
+        .media img{width: 120px;}
+        
     }
-    
-    .vertical-bar{
-        font-size: 1.5em;   
+
+
+    @media (min-width: 992px){
+        
+        /* -------- GLOBAL STYLES -------- */
+        
+        h1{font-size: 36px;}
+        h2{font-size: 30px;}
+        h3{font-size: 24px;}
+        h4{font-size: 18px;}
+        h5{font-size: 14px;}
+        h6{font-size: 12px;}
+
+        .media img{width: 160px;}
+        
+        /* -------- NAVBAR -------- */
+        
+        .navbar-brand,
+        .navbar-nav li,
+        .navbar-nav li a{/* setting height of navbar to match photoshop layout */
+            line-height: 65px;
+            height: 65px;
+            padding-top: 0;
+        }
+
+        .navbar{
+            background-color: #fff;
+            max-height: 75px;
+        }
+        
+        .navbar-nav{
+            margin-top: 10px;
+            margin-left: auto;
+            background-color: #fff;
+        }
+
+        .navbar-brand img{
+            margin-top: 15px;
+            height: 45px;
+        }
+
+        .navbar a{color: #454545;}
+
+        .vertical-bar{
+            font-size: 1.5em;
+            font-weight: 100;
+        }
+        
+        /* -------- HEADER -------- */
+        
+        .header{margin-top: 75px;}
+        
+        /* -------- MARKETING -------- */
+        
+        .marketing .btn{float: right;}
     }
-    
-    .navbar-nav{
-        background-color: #fff;
-    }
-}
-
-/* ------------
-    HEADER
------------- */
-
-/* For screens less than 992px: */
-
-.header{
-    background-color: #8eb4e3;
-    text-align: center;
-    color: #fff;
-    padding: 50px 0px;
-    margin-top: 50px;
-}
-
-.header h4{
-    margin-top: 25px;
-}
-/* Media queries for screens larger than 992px: */
-
-@media (min-width: 992px){
-    .header{
-        margin-top: 75px;
-    }
-}
-
-/* ------------
-    Content
------------- */
-
-/* For screens less than 768px: */
 
 
-.content h3{
-    color: #8eb4e3;
-    margin-bottom: 25px;
-}
-
-.content a{
-    color: #2aae56;
-    text-decoration: underline;
-}
-.content .media{
-    margin-bottom: 20px;
-}
-
-.content-section{
-    margin-bottom: 60px;
-}
-
-
-/* Media queries for screens larger than 768px: */
-
-
-/* Media queries for screens larger than 992px: */
-
-
-/* ------------
-    Marketing
------------- */
-
-/* For screens less than 992px: */
-
-.marketing img{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-}
-
-.marketing .btn{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Media queries for screens larger than 768px: */
-
-@media (min-width: 992px){
-    .marketing .btn{
-        float: right;
-    }
-}
-
-/* ------------
-    ACME Team
------------- */
-
-/* For screens less than 992px: */
-
-.acme-team h3{
-    color: #373737;
-    margin-bottom: 10px;
-}
-
-/* Media queries for screens larger than 768px: */
-
-@media (min-width: 992px){
-    
-}
