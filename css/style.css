@@ -1,0 +1,167 @@
+/* -- Navbar -- */
+
+/*.navbar{
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    padding: 0px;
+}
+
+.logo{
+    margin: 10px 0px 0px 5px;
+    max-width: 70%;
+}
+
+.navbar-nav{
+    text-align: right;
+}
+
+#nav-links{
+    background-color: #3e3e3e;
+    margin-left: 50%;
+}
+
+#nav-links li a:hover,
+#nav-links li a:focus{
+    background-color: transparent;
+}
+
+.navbar-collapse a{
+    color: #fff;
+}
+
+.nav-border-right{
+    border-right: 0px;
+}
+
+.navbar-toggle{
+    background-color: #3e3e3e;
+    border-radius: 0px;
+}
+
+.icon-bar{
+    background-color: #fff;   
+}*/
+
+.navbar-brand,
+.navbar-nav li,
+.navbar-nav li a{
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+
+.navbar-nav{
+    margin-top: -7.5px;
+}
+
+.navbar-collapse{
+    border-top: none;
+}
+
+.navbar-brand img{
+    height: 25px;
+    margin-top: 12.5px;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar-toggle{
+    background-color: #3e3e3e;
+    border-radius: 0px;
+}
+
+.icon-bar{
+    background-color: #fff;   
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus{
+    background-color: transparent;
+}
+
+.navbar-nav{
+    text-align: right;
+    background-color: #3e3e3e;
+    margin-left: 50%;
+}
+
+@media (min-width: 768px){   
+    /*.navbar{
+        min-height: 60px;
+    }
+    
+    .logo{
+        margin: 0px 0px;
+        max-width: 100%;
+    }
+    
+    .navbar-header,
+    #nav-links{
+        padding-top: 0px;
+    }
+    
+    #nav-links{
+        background-color: #fff;
+        margin-left: 0px;
+    }
+    
+    #nav-links li{
+        height: 22px;    
+    }
+    
+    #nav-links button{
+        margin-top: -6px;
+        margin-left: -15px;
+    }
+    
+    .nav>li>a{
+        display: inline;
+        padding: 0px 15px;
+    }
+    
+    */
+    .navbar-brand,
+    .navbar-nav li,
+    .navbar-nav li a{
+        line-height: 60px;
+        height: 60px;
+        padding-top: 0;
+    }
+    
+    .navbar-brand{
+        margin-top: 15px;
+    }
+     
+    .navbar a{
+        color: #454545;
+    }
+    
+    .vertical-bar{
+        font-size: 1.5em;   
+    }
+    
+    .navbar-nav{
+        background-color: #fff;
+    }
+}
+
+/* -- Header -- */
+
+.header{
+    background-color: #8eb4e3;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px){
+    .header{
+        margin-top: 60px;
+    }
+}
