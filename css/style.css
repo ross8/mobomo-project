@@ -16,7 +16,7 @@
     64{font-size: 10px;}
 
 
-    .btn{
+    .btn{/* A gradient generator was used for some of these gradients */
         background: rgb(54,217,108); /* Old browsers */
         background: -moz-linear-gradient(top,  rgba(54,217,108,1) 0%, rgba(42,174,86,1) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(54,217,108,1)), color-                               stop(100%,rgba(42,174,86,1))); /* Chrome,Safari4+ */
@@ -24,7 +24,6 @@
         background: -o-linear-gradient(top,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(top,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* IE10+ */
         background: linear-gradient(to bottom,  rgba(54,217,108,1) 0%,rgba(42,174,86,1) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36d96c', endColorstr='#2aae56',GradientType=0 ); /* IE6-9 */
         border: none;
         border-radius: 8px;
     }
@@ -94,7 +93,7 @@
         margin-top: 50px;
     }
 
-    .header-gradient{/* This gradient emulates blending method used in photoshop file. */
+    .header-gradient{/* This gradient emulates blending method used in photoshop file. A gradient generator was used for some of these gradients*/
         margin-top: -50px;
         background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
@@ -102,7 +101,6 @@
         background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
         background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
         background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#00000000',GradientType=0 ); /*IE6-9 */
     }
 
     .header h4{margin-top: 25px;}/* Matching photoshop file spacing */
