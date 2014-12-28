@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- php includes used to simplify and organize code during development -->
+<!-- php includes used throughout to simplify and organize code during development -->
 <html lang="en">
     <head>
         <?php include('./assets/includes/head.html'); ?>
